@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+Conflicting change on main branch
+=======
+Conflict change on conflict-branch
+>>>>>>> conflict-branch
