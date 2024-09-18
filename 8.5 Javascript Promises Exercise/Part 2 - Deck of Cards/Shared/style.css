@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+  background-color: green;
+}
+
+#heading {
+  color: white;
+}
+
+#card-container {
+  margin-top: 80px;
+}
+
+#card-container > img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
