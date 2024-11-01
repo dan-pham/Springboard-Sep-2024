@@ -1,0 +1,19 @@
+.filters-container {
+	display: flex;
+	gap: 10px;
+}
+
+.filter-button {
+	background-color: transparent;
+	border: 2px solid red;
+	color: white;
+	padding: 10px 20px;
+	width: 120px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-button:hover {
+	background-color: red;
+	text-shadow: 1px 1px 2px black;
+}

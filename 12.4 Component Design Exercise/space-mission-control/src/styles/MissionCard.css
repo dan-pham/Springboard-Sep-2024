@@ -1,0 +1,12 @@
+.mission-card {
+	display: flex;
+	flex-direction: column;
+}
+
+.mission-card h3 {
+	margin: 0 0 10px 0;
+}
+
+.mission-card p {
+	margin: 5px 0;
+}

@@ -1,0 +1,18 @@
+.mission-control {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 10px;
+}
+
+.mission-control h1 {
+	margin: 2px 0;
+}
+
+.mission-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid white;
+	padding: 10px;
+}
