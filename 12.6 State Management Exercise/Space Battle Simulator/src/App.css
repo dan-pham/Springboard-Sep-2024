@@ -1,0 +1,77 @@
+body {
+	background-color: #000f1c;
+	color: #ffffff;
+	font-family: monospace;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	padding: 20px;
+}
+
+.title-container {
+	text-align: center;
+}
+
+.game-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-grow: 1;
+	width: 100%;
+}
+
+.player {
+	align-items: flex-start;
+	color: #62ff62;
+}
+
+.enemy {
+	color: #ff2727;
+}
+
+button {
+	all: unset;
+	box-sizing: border-box;
+}
+
+.fire-button,
+.restart-button {
+	width: 120px;
+	height: 120px;
+	color: #ffffff;
+	border-radius: 100%;
+	display: flex;
+	border: 10px solid #ff2727;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.fire-button {
+	background-color: #ff9812;
+}
+
+.restart-button {
+	border-color: #ffffff;
+	background-color: transparent;
+}
+
+.restart-button:hover,
+.fire-button:hover {
+	opacity: 0.8;
+}
+
+.message-container {
+	margin: 50px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	border: 2px solid;
+}
