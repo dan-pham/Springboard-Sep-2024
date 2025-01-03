@@ -1,0 +1,16 @@
+.Star {
+	position: absolute;
+	color: yellow;
+	font-size: 40px;
+	width: 20px;
+	height: 20px;
+}
+
+.Star:hover {
+	cursor: pointer;
+}
+
+.Star:focus {
+	outline: none;
+	text-shadow: 1px 1px 10px yellow;
+}
