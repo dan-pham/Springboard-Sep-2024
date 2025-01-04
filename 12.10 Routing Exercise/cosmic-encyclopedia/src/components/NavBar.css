@@ -1,0 +1,17 @@
+.nav-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	border: 2px solid;
+	margin-bottom: 40px;
+}
+
+.link {
+	margin: 0 20px;
+	color: white;
+}
+
+.link:hover {
+	cursor: pointer;
+}
