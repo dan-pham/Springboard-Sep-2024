@@ -1,0 +1,52 @@
+.form-container {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.textfield,
+.textarea {
+	border: 2px solid white;
+	margin-bottom: 20px;
+}
+
+.textfield input,
+.textarea textarea {
+	width: 100%;
+	padding: 10px;
+	color: white;
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+
+.textarea textarea {
+	height: 100px;
+}
+
+.checkbox {
+	padding: 10px;
+	border: 2px solid white;
+	margin-bottom: 20px;
+}
+
+.checkbox input {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.error {
+	border-color: red;
+}
+
+.submit-button {
+	display: flex;
+	align-items: center;
+	align-self: flex-end;
+	justify-content: center;
+	width: 120px;
+	height: 40px;
+	color: white;
+	border: 2px solid green;
+	background-color: transparent;
+}
