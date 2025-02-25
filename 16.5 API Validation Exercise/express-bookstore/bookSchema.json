@@ -1,0 +1,54 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://example.com/book.schema.json",
+	"type": "object",
+	"properties": {
+		"isbn": {
+			"type": "string",
+			"pattern": "^(97(8|9))?\\d{9}(\\d|X)$",
+			"maxLength": 13,
+			"minLength": 10,
+			"description": "The ISBN should be a valid 10 or 13 character ISBN number, starting with '978' or '979' for a 13 character ISBN."
+		},
+		"amazon_url": {
+			"type": "string",
+			"format": "uri",
+			"description": "The Amazon URL should be a valid URI in the correct format."
+		},
+		"author": {
+			"type": "string",
+			"minLength": 1,
+			"description": "The author's name should be a non-empty string with a reasonable length."
+		},
+		"language": {
+			"type": "string",
+			"minLength": 2,
+			"maxLength": 10,
+			"pattern": "^[a-zA-Z]{2,10}$",
+			"description": "The language code should be a valid ISO 639-1 language code (e.g., 'en', 'es')."
+		},
+		"pages": {
+			"type": "integer",
+			"minimum": 1,
+			"description": "The number of pages should be a positive integer."
+		},
+		"publisher": {
+			"type": "string",
+			"minLength": 1,
+			"description": "The publisher's name should be a non-empty string, with a reasonable length."
+		},
+		"title": {
+			"type": "string",
+			"minLength": 1,
+			"description": "The title should be a non-empty string with a reasonable length."
+		},
+		"year": {
+			"type": "integer",
+			"minimum": 0,
+			"maximum": 2025,
+			"description": "The publication year should be an integer between 0 and the current year."
+		}
+	},
+	"required": ["isbn", "author", "language", "pages", "publisher", "title", "year"],
+	"additionalProperties": false
+}
